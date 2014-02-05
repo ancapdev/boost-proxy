@@ -1,4 +1,4 @@
-# Copyright (c) 2012-2013, Christian Rorvik
+# Copyright (c) 2012-2014, Christian Rorvik
 # Distributed under the Simplified BSD License (See accompanying file LICENSE.txt)
 
 #
@@ -33,8 +33,8 @@ else()
 endif()
 set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME OFF)
-set(Boost_ADDITIONAL_VERSIONS "1.53" "1.53.0")
-find_package(Boost 1.53.0 EXACT QUIET REQUIRED ${_components})
+set(Boost_ADDITIONAL_VERSIONS "1.55" "1.55.0")
+find_package(Boost 1.55.0 EXACT QUIET REQUIRED ${_components})
 
 if(NOT Boost_FOUND)
   message(FATAL_ERROR "Boost not found")
